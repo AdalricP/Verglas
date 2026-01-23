@@ -1,0 +1,34 @@
+# Supervised Fine-Tuning (Stage 1) Configuration
+
+# Model settings
+base_model: "gpt2"
+max_length: 2048
+
+# Data settings
+data_dir: "data/processed"
+train_split: 0.8
+val_split: 0.1
+
+# Training settings
+epochs: 5
+batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-5
+weight_decay: 0.01
+warmup_steps: 500
+max_grad_norm: 1.0
+
+# Hardware settings
+device: "cuda"  # or "cpu"
+mixed_precision: true
+gradient_checkpointing: true
+
+# Logging settings
+log_interval: 10
+save_interval: 500
+output_dir: "checkpoints/sft_model"
+
+# Special tokens
+bos_token: "<|startofmusic|>"
+eos_token: "<|endofmusic|>"
+pad_token: "<|pad|>"

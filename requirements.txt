@@ -1,0 +1,23 @@
+# Verglas: MusicXML Generator via RLHF
+# Post-training GPT-2 on the Leider Corpus
+
+# Core ML
+torch>=2.0.0
+transformers>=4.35.0
+trl>=0.7.0
+peft>=0.6.0
+accelerate>=0.24.0
+
+# Music Processing
+music21>=9.0.0
+lxml>=4.9.0
+
+# Utilities
+numpy>=1.24.0
+tqdm>=4.65.0
+pyyaml>=6.0
+click>=8.1.0
+
+# Optional
+wandb>=0.15.0
+tensorboard>=2.14.0
