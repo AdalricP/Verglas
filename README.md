@@ -12,7 +12,9 @@ The project uses the [Leider Corpus MXL](https://github.com/AdalricP/LeiderCorpu
 pip install -r requirements.txt
 ```
 
-## Training
+## Usage
+
+### Training
 
 ```bash
 python scripts/train.py
@@ -20,23 +22,13 @@ python scripts/train.py
 
 The trained model will be saved to `model/verglas.pt`.
 
-## Generation
+### Generation
 
 ```bash
 python scripts/generate.py
 ```
 
-Output will be saved to `output.xml`.
-
-## Project Structure
-
-```
-verglas/
-├── data/           # Training data (.mxl files)
-├── model/          # Saved models
-├── scripts/        # Training and generation scripts
-└── src/            # Source code
-```
+Saves to output.mxl
 
 ## License
 
